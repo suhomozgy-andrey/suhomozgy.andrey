@@ -1,0 +1,20 @@
+.App {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.Photo {
+	width: 250px;
+}
+
+.Socials {
+	display: flex;
+	align-items: center;
+
+	& > * + * {
+		margin-left: 10px;
+	}
+}

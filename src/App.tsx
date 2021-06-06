@@ -1,23 +1,32 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import photo from "./assets/images/photo.jpeg";
+import linkedinLogo from "./assets/images/linkedin.svg";
+import facebookLogo from "./assets/images/facebook.svg";
 
-function App() {
-	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Andrei Sukhomozgii
-				</a>
-			</header>
+import styles from "./App.module.scss";
+
+const App = () => (
+	<div className={styles.App}>
+		<img className={styles.Photo} src={photo} alt="Andrei Sukhomozgii" />
+		<p>Andrei Sukhomozgii - Frontend Engineer</p>
+		<div className={styles.Socials}>
+			<a href="https://www.linkedin.com/in/suhomozgyandrey/">
+				<img
+					src={linkedinLogo}
+					alt="Andrei Sukhomozgii - LinkedIn"
+					width="32"
+					height="32"
+				/>
+			</a>
+			<a href="https://www.facebook.com/profile.php?id=100000774672688">
+				<img
+					src={facebookLogo}
+					alt="Andrei Sukhomozgii - Facebook"
+					width="32"
+					height="32"
+				/>
+			</a>
 		</div>
-	);
-}
+	</div>
+);
 
 export default App;
